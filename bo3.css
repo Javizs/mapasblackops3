@@ -1,0 +1,867 @@
+.night {
+    color: rgb(231, 204, 204); /* Color normal */
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+    display: inline-block; /* Permite el escalado */
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff4500, 0 0 30px #ff6347, 0 0 40px #ff4500;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    cursor: url('cursor.png') 16 16, auto;
+    
+}
+
+.night:hover {
+    color: red; /* Cambia de color al pasar el cursor */
+    transform: scale(1.3); /* Aumenta el tamaño */
+    text-shadow: 0 0 15px #ff0000, 0 0 30px #ff4500, 0 0 45px #ff6347, 0 0 60px #ff4500;
+    animation:text-flicker-in-glow 4s linear both
+    
+    
+}
+.night img {
+    
+    align-content: center;
+}
+.night{
+  text-shadow: 
+      0 0 15px #ff0000,  /* Primer nivel de brillo */
+      0 0 30px #ff4500,  /* Segundo nivel */
+      0 0 60px #ff6347,  /* Tercer nivel más difuso */
+      0 0 90px #ff4500;  /* Último nivel de desvanecimiento */
+}
+
+  
+
+  @keyframes text-flicker-in-glow {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    10.1% {
+      opacity: 1;
+      text-shadow: none;
+    }
+    10.2% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    20% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    20.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+    20.6% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    30% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    30.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.5% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    30.6% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    45.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+    55.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    57% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    57.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+    60.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    65% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    65.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    75.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    77% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    77.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    85.1% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    86% {
+      opacity: 0;
+      text-shadow: none;
+    }
+    86.1% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 75px; /* Tamaño grande */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #a64d00; /* Tono marrón oscuro-naranja para bajo contraste */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0;
+    font-family:'PixelPro', sans-serif;
+    text-shadow: 0 0 10px #5c2c00, 0 0 20px #3d1f00, 0 0 30px #261400;
+    animation: glitch 2s infinite;
+    margin-bottom: 10px; 
+}
+
+@keyframes glitch {
+    0% { text-shadow: 3px 3px 10px #5c2c00, -3px -3px 10px #261400; }
+    25% { text-shadow: -3px -3px 15px #5c2c00, 3px 3px 15px #261400; }
+    50% { text-shadow: 4px -4px 20px #3d1f00, -4px 4px 20px #261400; }
+    75% { text-shadow: -4px 4px 25px #5c2c00, 4px -4px 25px #261400; }
+    100% { text-shadow: 3px 3px 30px #3d1f00, -3px -3px 30px #261400; }
+}
+
+body {
+  padding-top: calc(100px + 175px); /* Altura del H1 + un margen extra */
+  color: #d47a2c;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6), -2px -2px 4px rgba(50, 50, 50, 0.5);
+    font-family: 'Black Ops One', sans-serif;
+    cursor: url('cursor.png') 16 16, auto;
+
+}
+.cajita {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que la imagen y el texto se mantengan dentro */
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  overflow: hidden; /* Evita que el contenido se salga */
+}
+.vibrate {
+  display: block;          /* Para que ocupe el 100% del ancho disponible o se ajuste a su contenedor */
+  margin: 20px auto;       /* Centra horizontalmente la imagen y le da un poco de margen superior e inferior */
+  opacity: 0.9;            /* Ligera transparencia */
+  width: fit-content;      /* (Opcional) Ajusta el ancho al contenido, si prefieres */
+  display: block;       /* Convertir en bloque para permitir margin auto */
+  width: 50%;           /* Ajusta el ancho según tu preferencia */
+  margin: 0 auto;       /* Centra horizontalmente */
+  text-align: center;  
+}
+
+.vibrate:hover {
+  animation: vibrate 1.5s linear both;
+}
+
+/* Ajusta el @keyframes para vibrar alrededor de la posición actual */
+@keyframes vibrate {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(-2px, 2px); }
+  40%  { transform: translate(-2px, -2px); }
+  60%  { transform: translate(2px, 2px); }
+  80%  { transform: translate(2px, -2px); }
+  100% { transform: translate(0, 0); }
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  align-items: stretch; /* Hace que todos los elementos tengan la misma altura */
+  position: relative;
+  z-index: 1000000;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantiene el contenido alineado */
+  align-items: center;
+  width: calc(33.33% - 40px);
+  max-width: 350px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden; /* Evita que el contenido sobresalga */
+  cursor: url('cursor.png') 16 16, auto;
+}
+.map img {
+  width: 100%; /* Ajusta el tamaño de las imágenes automáticamente */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 10px; /* Bordes redondeados */
+  cursor: url('cursor.png') 16 16, auto;
+}
+.map,
+.container {
+  pointer-events: none; /* 🔹 Permite que los clics pasen a los zombis */
+}
+
+.map a,
+.map img,
+.map .vibrate,
+.map .cajita {
+  pointer-events: auto; /* 🔹 Se mantiene clicable solo donde lo necesitas */
+}
+
+.map p {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.cajita img {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  object-fit: contain; /* Evita que la imagen se deforme */
+  max-height: 100%; /* Limita la altura máxima para que no sobresalga */
+}
+@font-face {
+  font-family: 'PixelPro';
+  src: url('fuentes/pixelpro-2p.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 🔹 Estilos base de la paginación */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre botones y página */
+  position: relative;
+  z-index: 100001;
+}
+
+/* 🔹 Botones de paginación usando la nueva clase */
+.pagination button {
+  all: unset; /* Elimina cualquier estilo predeterminado */
+}
+
+/* 🔹 Aplicar el nuevo estilo con animaciones flotantes */
+.pagination .button {
+  position: relative;
+  background: rgba(57, 57, 57, 0.7);
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  animation: floating 3s ease-in-out infinite; /* Animación flotante */
+  transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* 🔹 Efecto de brillo al pasar el mouse */
+.pagination .button:hover {
+  color: #FFB900;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+  background-position: right center;
+  background: linear-gradient(to right, #FFB900, #FF7730);
+  background-clip: text; /* Propiedad estándar */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: url('cursor.png') 16 16, auto;
+}
+
+/* 🔹 Efecto de partículas animadas */
+.pagination .button::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px #FF7730;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  width: 5px;
+  height: 5px;
+  background: #FF7730;
+  animation: particles 2s infinite;
+  cursor: url('cursor.png') 16 16, auto;
+}
+
+/* 🔹 Animación flotante */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* 🔹 Animación de partículas */
+@keyframes particles {
+  0% {
+    transform: translateZ(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(190px, 50px);
+    opacity: 0;
+  }
+}
+/* -------------------------------------------- */
+#zombie-container {
+  position: fixed; /* 🔹 Fija los zombis en toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events:auto;
+  pointer-events: none; /* ⛔️ Evita que bloquee clics en el menú */
+  z-index: 9999;
+ 
+}
+#zombie-container .zombie {
+  pointer-events: auto; /* ✅ Los zombis sí pueden ser clicables */
+}
+
+.zombie {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('zombie.png');
+  background-size: cover;
+  pointer-events: auto; /* 🔹 Permite hacerles clic */
+  animation: wobble 0.5s infinite alternate ease-in-out;
+  visibility: hidden;
+  z-index: 1000000;
+}
+ 
+/* Para wobble opcional */
+@keyframes wobble {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+
+/* ----------------------------------------------- */
+#hud {
+  position: fixed; /* 🔹 Mantiene el HUD en pantalla aunque hagas scroll */
+  top: 10px; /* 🔹 Lo pega a la parte superior */
+  left: 10px; /* 🔹 Lo pega a la izquierda */
+  display: grid;
+  grid-template-columns: auto auto auto; /* 🔹 Asegura que Ronda, Pausar y Reiniciar estén alineados */
+  align-items: center;
+  gap: 10px; /* 🔹 Espacio entre columnas */
+  background: rgba(0, 0, 0, 0.7); /* 🔹 Fondo oscuro semi-transparente */
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 100001;/* 🔹 Se asegura de que esté encima de otros elementos */
+  width: max-content; /* 🔹 Ajusta el ancho al contenido */
+}
+
+#hud button {
+  font-family: 'PixelPro', sans-serif;
+  font-size: 16px;
+  padding: 6px 12px;
+  border: none;
+  background: #d47a2c;
+  color: white;
+  cursor: url('cursor.png') 16 16, auto;
+  border-radius: 5px;
+  transition: background 0.3s;
+  min-width: 100px; /* 🔹 Hace que los botones tengan tamaño uniforme */
+  text-align: center;
+  z-index: 999;
+}
+
+#hud button:hover {
+  background: #ff6600;
+  z-index: 999;
+}
+
+#ronda {
+  font-family: 'PixelPro', sans-serif; /* Usa la fuente personalizada */
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-align: center;
+  white-space: nowrap; /* 🔹 Evita que "Ronda" se expanda demasiado */
+  min-width: 90px; /* 🔹 Evita que el tamaño varíe demasiado */
+  z-index: 999;
+}
+
+#botones {
+  display: flex;
+  flex-direction: row; /* 🔹 Mantiene los botones alineados */
+  gap: 10px;
+}
+
+#botones button {
+  font-family: 'PixelPro', sans-serif;
+  font-size: 16px;
+  padding: 6px 12px;
+  border: none;
+  background: #d47a2c;
+  color: white;
+  cursor: url('cursor.png') 16 16, auto;
+  border-radius: 5px;
+  transition: background 0.3s;
+  min-width: 100px; /* 🔹 Hace que los botones tengan tamaño uniforme */
+  text-align: center;
+}
+
+#botones button:hover {
+  background: #ff6600;
+}
+
+/* --------------------------------------------- */
+@media screen and (max-width: 768px) { /* 🔹 Se aplica en móviles */
+  .map p {
+      display: none; /* 🔹 Oculta los párrafos dentro de los mapas */
+  }
+ .night{
+  display: none;
+ }
+  .map {
+      width: 100%; /* 🔹 Ocupa todo el ancho disponible */
+      height: 300px; /* 🔹 Ajusta la altura */
+      position: relative; /* 🔹 Permite que la imagen se adapte dentro */
+      overflow: hidden; /* 🔹 Evita que la imagen sobresalga */
+      pointer-events:all;
+  }
+  .map a, .map img {
+    pointer-events: auto;
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+  
+
+  .map img {
+      width: 100%; /* 🔹 La imagen ocupa todo el ancho */
+      height: 100%; /* 🔹 La imagen ocupa toda la altura */
+      object-fit: cover; /* 🔹 Ajusta la imagen para cubrir todo sin deformarse */
+      position: absolute; /* 🔹 Asegura que la imagen se mantenga dentro */
+      top: 0;
+      left: 0;
+     
+  }
+}
+
+ /* 🔹 Título principal (h1) más pequeño y centrado */
+ h1 {
+  text-align: center;
+  margin: 20px auto 10px;
+ 
+}
+
+/* 🔹 HUD: Se adapta al ancho del móvil */
+#hud {
+  top: 5px;
+  left: 5px;
+  padding: 6px;
+  gap: 6px;
+  flex-direction: column; /* 🔹 Botones uno debajo del otro */
+  align-items: flex-start;
+  max-width: 95vw; /* 🔹 Que no sobresalga */
+  z-index: 100000;
+}
+
+#hud button {
+  font-size: 14px;
+  padding: 5px 10px;
+  min-width: auto;
+  width: 100%; /* 🔹 Que ocupen todo el ancho del HUD */
+}
+
+#ronda {
+  font-size: 18px;
+  padding: 4px 8px;
+  text-align: left;
+}
+
+/* --------------------------------------- */
+/* Estilo menú lateral */
+.sidebar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10000001; /* ⬅️ AUMENTA este valor */
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.navicon {
+  background: #ff7700;
+  display: block;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.navicon::before,
+.navicon::after {
+  content: "";
+  background: #ff7700;
+  display: block;
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navicon::before {
+  top: -10px;
+}
+.navicon::after {
+  top: 10px;
+}
+
+/* checkbox para animar */
+#menuToggle {
+  display: none;
+}
+
+#menuToggle:checked + .menu-icon .navicon {
+  background: transparent;
+}
+
+#menuToggle:checked + .menu-icon .navicon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+#menuToggle:checked + .menu-icon .navicon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 👈 Centrado perfecto */
+  list-style: none;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: none;
+  z-index: 10000001; /* ⬅️ AUMENTA este valor */
+  box-shadow: 0 0 20px #ff7700;
+  text-align: center;
+  width: 200px;
+}
+
+
+
+#menuToggle:checked ~ .menu {
+  display: block;
+}
+
+.menu li {
+  margin: 10px 0;
+  font-family: 'PixelPro', sans-serif;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ff7700;
+}
+
+/* --------------------------------------- */
+#categoriaActiva {
+  text-align: center;
+  font-family: 'PixelPro', sans-serif;
+  font-size: 50px;
+  color: #ffa733;
+  text-shadow: 2px 2px 4px black;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+figure figcaption {
+  display: none;
+}
+figure {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* ---------------------------------*/
+.articulos-destacados {
+  padding: 60px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: 'PixelPro', sans-serif;
+  text-align: center;
+}
+
+.articulos-destacados h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #FFA733;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Cada bloque de artículo */
+.articulo-preview {
+  margin: 60px auto; /* 🔹 Más separación del contenido externo */
+  padding: 35px 40px; /* 🔹 Más espacio interno */
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(250, 201, 33, 0.3); /* 🔹 Línea más sutil (o cámbiala a transparent si quieres ocultarla del todo) */
+  border-radius: 12px;
+  transition: background 0.3s;
+  text-shadow: 1px 1px 3px black;
+
+}
+
+/* Hover */
+.articulo-preview:hover {
+  background: rgba(255, 255, 255, 0.15);
+  text-shadow: 1px 1px 3px black;
+
+}
+
+/* Enlace general */
+.articulo-preview a {
+  text-decoration: none;  /* ❌ Quita subrayado */
+  color: inherit;         /* Mantiene color del texto */
+  display: block;
+  text-shadow: 1px 1px 3px black;
+
+}
+
+/* Título del artículo */
+.articulo-preview h3 {
+  color: #FAC921;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Descripción */
+.articulo-preview p {
+  color: #ddd;
+  font-size: 17px;
+}
+
+
+/* -------------------------------- */
+/* ---------------------- */
+/* 🎯 Estilos para artículos */
+/* ---------------------- */
+
+.btn-volver {
+  position: relative;
+  background: rgba(57, 57, 57, 0.7);
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  animation: floating 3s ease-in-out infinite; /* Animación flotante */
+  transition: color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-volver:hover {
+  color: #FFB900;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+  background-position: right center;
+  background: linear-gradient(to right, #FFB900, #FF7730);
+  background-clip: text; /* Propiedad estándar */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: url('cursor.png') 16 16, auto;
+}
+
+.articulo-detalle {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 50px auto;
+  color: white;
+  font-family: 'PixelPro', sans-serif;
+  line-height: 1.6;
+  z-index: 10;
+  position: relative;
+}
+
+h1.articulo-detalle  {
+  font-size: 26px;
+  color: #ff7730;
+  margin-top: 40px auto;
+  text-shadow: 1px 1px 3px black;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 0;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+}
+
+.articulo-detalle h2  {
+  font-size: 26px;
+  color: #ff7730;
+  margin-top: 40px;
+  text-shadow: 1px 1px 3px black;
+ 
+}
+
+.articulo-detalle p,
+.articulo-detalle li {
+  font-size: 18px;
+  color: #eee;
+  text-shadow: 1px 1px 3px black;
+
+}
+
+.articulo-detalle a {
+  color: #ff7730;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px black;
+
+  
+}
+
+.articulo-detalle a:hover {
+  text-decoration: underline;
+}
+.titulo-articulo {
+  font-size: 38px;
+  color: #ff7730;
+  margin-top: 40px;
+  text-shadow: 1px 1px 3px black;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'PixelPro', sans-serif;
+  padding: 20px 0;
+  z-index: 1000;
+  margin: bottom -40000px; /* 🔽 Puedes probar con 5px si quieres aún menos espacio */
+}
+.artimg {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 1em auto;
+  border: 2px solid #ff6600;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
